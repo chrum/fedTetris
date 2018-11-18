@@ -18,7 +18,7 @@ export class PlayerFormComponent implements OnInit {
   }
 
   formSubmit() {
-    this.submitted.emit();
+    this.submitted.emit(this.name);
   }
 
 }

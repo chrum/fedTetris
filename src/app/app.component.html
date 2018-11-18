@@ -1,5 +1,5 @@
 <app-player-form *ngIf="gameStarted === false"
-        (submitted)="start()"
+        (submitted)="start($event)"
         [gameTitle]="title"></app-player-form>
 
 

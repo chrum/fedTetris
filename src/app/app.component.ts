@@ -7,10 +7,18 @@ import { Component } from '@angular/core';
 })
 export class AppComponent {
   title = 'fedTetris';
-  name = 'Chrystian';
+  name: string;
   gameStarted = false;
 
-  start() {
+  constructor() {
+    if (localStorage.name) {
+      this.start(localStorage.name);
+    }
+  }
+
+  start(name) {
+    this.name = name;
+    localStorage.name = name;
     this.gameStarted = true;
   }
 
