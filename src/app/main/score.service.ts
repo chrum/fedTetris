@@ -7,20 +7,31 @@ import {HttpClient, HttpHeaders} from '@angular/common/http';
 export class ScoreService {
   data = [];
 
+  url = 'https://tetris.chrum.it/scores';
+
   constructor(private _http: HttpClient) {
     this.fetchData();
   }
 
   fetchData() {
-      const URL = 'https://tetris.chrum.it/scores';
       const headers = new HttpHeaders({
           'accept': 'application/json'
       });
 
-      this._http.get(URL, {
+      this._http.get(this.url, {
           headers
       }).subscribe((results: Array<any>) => {
         this.data = results;
+      });
+  }
+
+  submit(name, score) {
+      this._http.post(this.url, {
+          name,
+          score,
+          auth: '<put your key here>'
+      }).subscribe((result: Array<any>) => {
+          this.data = result;
       });
   }
 }

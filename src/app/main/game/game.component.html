@@ -10,6 +10,7 @@
     </div>
     <div class="col">
       <tetris-core #game
+                   (gameOver)="onGameOver()"
                    (lineCleared)="onLineCleared()"></tetris-core>
     </div>
     <div class="col">
@@ -18,7 +19,7 @@
   </div>
   <div class="row">
     <div class="col">
-      1 of 3
+      <!--<button (click)="fakeGameOver()">fake game over</button>-->
     </div>
     <div class="col">
       <app-controller [game]="game"></app-controller>
