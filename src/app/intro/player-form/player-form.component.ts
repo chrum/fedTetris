@@ -1,4 +1,4 @@
-import {Component, Input, OnInit} from '@angular/core';
+import {Component, EventEmitter, Input, OnInit, Output} from '@angular/core';
 
 @Component({
   selector: 'app-player-form',
@@ -7,9 +7,14 @@ import {Component, Input, OnInit} from '@angular/core';
 })
 export class PlayerFormComponent implements OnInit {
   @Input() gameTitle = 'no name';
+  @Output() submitted = new EventEmitter();
   constructor() { }
 
   ngOnInit() {
+  }
+
+  formSubmit() {
+    this.submitted.emit();
   }
 
 }
