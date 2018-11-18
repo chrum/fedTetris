@@ -32,8 +32,8 @@ Branch name | Description
 **06.TASK-game-input** | **Task branch**<br/> Passing player name to game component throught input and displaying personalized message: <br/>*<player-name> game works!* <br/>on the screen
 **07.form-submitted-event** | Moving game start button to player form component, emitting *submitted* event through component output 
 **08.TASK-game-ended-event** | **Task branch**<br/> Moving game end button to game component, emitting *ended* event throught component output
-**09.name-input-element** | Moving game start button to player form component, emitting *submitted* event through component output 
-**10.TASK-email-input-element** | **Task branch**<br/> Moving game end button to game component, emitting *ended* event throught component output
+**09.name-input-element** | Adding name input element to player form with validation logic 
+**10.TASK-email-input-element** | **Task branch**<br/> Adding email input element to player form with validation logic
 **11.form-element** | Wrapping inputs with form element, adding localStorage logic to remember 'app state' in order to make it easier to work in the next steps (live reloading)
 **12.tetris-core** | Installing tetris game core library, adding bootstrap and game template
 **13.controller** | Creating controller component, moving game controls (buttons) to controller
