@@ -2,8 +2,8 @@
         (submitted)="start()"
         [gameTitle]="title"></app-player-form>
 
-<div *ngIf="gameStarted">
-  <button (click)="end()">End game</button>
-  <app-game [playerName]="name"></app-game>
-</div>
+
+<app-game *ngIf="gameStarted"
+      (ended)="end()"
+      [playerName]="name"></app-game>
 

@@ -1,4 +1,4 @@
-import {Component, Input, OnInit} from '@angular/core';
+import {Component, EventEmitter, Input, OnInit, Output} from '@angular/core';
 
 @Component({
   selector: 'app-game',
@@ -7,9 +7,14 @@ import {Component, Input, OnInit} from '@angular/core';
 })
 export class GameComponent implements OnInit {
   @Input() playerName = 'unnamed';
+  @Output() ended = new EventEmitter();
   constructor() { }
 
   ngOnInit() {
+  }
+
+  end() {
+    this.ended.emit();
   }
 
 }
