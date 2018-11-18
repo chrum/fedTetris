@@ -10,6 +10,7 @@ export class PlayerFormComponent implements OnInit {
   @Output() submitted = new EventEmitter();
 
   name: string;
+  email: string;
 
   constructor() { }
 
