@@ -8,6 +8,9 @@ import {Component, EventEmitter, Input, OnInit, Output} from '@angular/core';
 export class PlayerFormComponent implements OnInit {
   @Input() gameTitle = 'no name';
   @Output() submitted = new EventEmitter();
+
+  name: string;
+
   constructor() { }
 
   ngOnInit() {
