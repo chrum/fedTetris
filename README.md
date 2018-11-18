@@ -24,15 +24,15 @@ You can pick up at any step of the course by selecting desired branch.
 Branch name | Description
 --- | ---
 **master** | Fresh angular project generated with *ng new <project-name>*
-**1.intro-form** | Creating intro module with dummy player form component
-**2.TASK-main-game** | **Task branch**<br/> Creating main module and dummy game component
-**3.game-start-btn** | Reacting to click even on button to hide player form component (start game)
-**4.TASK-game-end-btn** | **Task branch**<br/>Reacting to click even on button to hide game (end game)
-**5.intro-form-input** | Moving app intro (welcome text and angular logo) to player form component of intro module, passing app title through component input
-**6.TASK-game-input** | **Task branch**<br/> Passing player name to game component throught input and displaying personalized message: <br/>*<player-name> game works!* <br/>on the screen
-**7.form-submitted-event** | Moving game start button to player form component, emitting *submitted* event through component output 
-**8.TASK-game-ended-event** | **Task branch**<br/> Moving game end button to game component, emitting *ended* event throught component output
-**9.name-input-element** | Moving game start button to player form component, emitting *submitted* event through component output 
+**01.intro-form** | Creating intro module with dummy player form component
+**02.TASK-main-game** | **Task branch**<br/> Creating main module and dummy game component
+**03.game-start-btn** | Reacting to click even on button to hide player form component (start game)
+**04.TASK-game-end-btn** | **Task branch**<br/>Reacting to click even on button to hide game (end game)
+**05.intro-form-input** | Moving app intro (welcome text and angular logo) to player form component of intro module, passing app title through component input
+**06.TASK-game-input** | **Task branch**<br/> Passing player name to game component throught input and displaying personalized message: <br/>*<player-name> game works!* <br/>on the screen
+**07.form-submitted-event** | Moving game start button to player form component, emitting *submitted* event through component output 
+**08.TASK-game-ended-event** | **Task branch**<br/> Moving game end button to game component, emitting *ended* event throught component output
+**09.name-input-element** | Moving game start button to player form component, emitting *submitted* event through component output 
 **10.TASK-email-input-element** | **Task branch**<br/> Moving game end button to game component, emitting *ended* event throught component output
 **11.form-element** | Wrapping inputs with form element, adding localStorage logic to remember 'app state' in order to make it easier to work in the next steps (live reloading)
 **12.tetris-core** | Installing tetris game core library, adding bootstrap and game template
