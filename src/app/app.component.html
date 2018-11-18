@@ -6,6 +6,6 @@
 
 <div *ngIf="gameStarted">
   <button (click)="end()">End game</button>
-  <app-game></app-game>
+  <app-game [playerName]="name"></app-game>
 </div>
 
