@@ -1,8 +1,6 @@
-<div *ngIf="gameStarted === false">
-  <app-player-form [gameTitle]="title">
-    </app-player-form>
-  <button (click)="start()">Start</button>
-</div>
+<app-player-form *ngIf="gameStarted === false"
+        (submitted)="start()"
+        [gameTitle]="title"></app-player-form>
 
 <div *ngIf="gameStarted">
   <button (click)="end()">End game</button>
