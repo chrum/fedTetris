@@ -2,3 +2,41 @@
 <p>
   Good news {{ playerName }}, game works!
 </p>
+
+<div class="container">
+  <div class="row">
+    <div class="col">
+      1 of 3
+    </div>
+    <div class="col">
+      <tetris-core #game
+                   (lineCleared)="onLineCleared()"></tetris-core>
+    </div>
+    <div class="col">
+      3 of 3
+    </div>
+  </div>
+  <div class="row">
+    <div class="col">
+      1 of 3
+    </div>
+    <div class="col">
+      <button (click)="startPlaying()">Start</button>
+      <button (click)="game.actionStop()">Stop</button>
+      <button (click)="game.actionReset()">Reset</button>
+      <button (click)="game.actionRotate()">Rotate</button>
+      <button (click)="game.actionLeft()">Left</button>
+      <button (click)="game.actionRight()">Right</button>
+      <button (click)="game.actionDown()">Down</button>
+    </div>
+    <div class="col">
+      3 of 3
+    </div>
+  </div>
+</div>
+
+
+
+
+
+
