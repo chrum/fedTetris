@@ -12,4 +12,8 @@ export class AppComponent {
   start() {
     this.gameStarted = true;
   }
+
+  end() {
+    this.gameStarted = false;
+  }
 }

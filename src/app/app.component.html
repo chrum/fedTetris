@@ -11,5 +11,8 @@
   <button (click)="start()">Start</button>
 </div>
 
-<app-game></app-game>
+<div *ngIf="gameStarted">
+  <button (click)="end()">End game</button>
+  <app-game></app-game>
+</div>
 
