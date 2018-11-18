@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import {Component, Input, OnInit} from '@angular/core';
 
 @Component({
   selector: 'app-player-form',
@@ -6,7 +6,7 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./player-form.component.scss']
 })
 export class PlayerFormComponent implements OnInit {
-
+  @Input() gameTitle = 'no name';
   constructor() { }
 
   ngOnInit() {
