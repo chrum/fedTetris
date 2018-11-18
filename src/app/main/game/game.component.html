@@ -21,13 +21,7 @@
       1 of 3
     </div>
     <div class="col">
-      <button (click)="startPlaying()">Start</button>
-      <button (click)="game.actionStop()">Stop</button>
-      <button (click)="game.actionReset()">Reset</button>
-      <button (click)="game.actionRotate()">Rotate</button>
-      <button (click)="game.actionLeft()">Left</button>
-      <button (click)="game.actionRight()">Right</button>
-      <button (click)="game.actionDown()">Down</button>
+      <app-controller [game]="game"></app-controller>
     </div>
     <div class="col">
       3 of 3
