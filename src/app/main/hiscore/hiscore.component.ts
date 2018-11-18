@@ -1,5 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import {HttpClient, HttpHeaders} from '@angular/common/http';
+import {ScoreService} from '../score.service';
 
 @Component({
   selector: 'app-hiscore',
@@ -7,17 +8,8 @@ import {HttpClient, HttpHeaders} from '@angular/common/http';
   styleUrls: ['./hiscore.component.scss']
 })
 export class HiscoreComponent implements OnInit {
-  data: any;
+  constructor(public score: ScoreService) {
 
-  constructor(private _http: HttpClient) {
-    const URL = 'https://tetris.chrum.it/scores';
-    const headers = new HttpHeaders({
-        'accept': 'application/json'
-    });
-
-    this.data = this._http.get(URL, {
-      headers
-    });
   }
 
 
