@@ -1,4 +1,5 @@
-import {Component, EventEmitter, Input, OnInit, Output} from '@angular/core';
+import {Component, EventEmitter, Input, OnInit, Output, ViewChild} from '@angular/core';
+import {TetrisCoreComponent} from 'ngx-tetris';
 
 @Component({
   selector: 'app-game',
@@ -8,9 +9,16 @@ import {Component, EventEmitter, Input, OnInit, Output} from '@angular/core';
 export class GameComponent implements OnInit {
   @Input() playerName = 'unnamed';
   @Output() ended = new EventEmitter();
+
+  @ViewChild(TetrisCoreComponent) tetris;
+
   constructor() { }
 
   ngOnInit() {
+  }
+
+  startPlaying() {
+    this.tetris.actionStart();
   }
 
   end() {
