@@ -18,10 +18,10 @@ Navigate to `http://localhost:4200/`
 
 ## Workshop steps
 
-You can pick up at any step of the course by selecting desired branch.  
+You can pick up at any step of the course by selecting desired branch.
 **IMPORTANT**: Task branches are for you to complete so try not to check them too quickly :) 
 
-Branch | Description
+Branch name | Description
 --- | ---
 **master** | Fresh angular project generated with *ng new <project-name>*
 **1.intro-form** | Creating intro module with dummy player form component
@@ -47,7 +47,7 @@ Branch | Description
 
 [Chrystian Ruminowicz](http://chrum.it)
 
-####Version
+#### Version
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 7.0.6.
  
 
