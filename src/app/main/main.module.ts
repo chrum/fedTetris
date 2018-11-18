@@ -7,14 +7,18 @@ import {HotkeyModule} from 'angular2-hotkeys';
 import { HiscoreComponent } from './hiscore/hiscore.component';
 import { BestPipe } from './best.pipe';
 import {HttpClientModule} from '@angular/common/http';
+import { FilterPipe } from './filter.pipe';
+import { MyScoreComponent } from './my-score/my-score.component';
+import {FormsModule} from '@angular/forms';
 
 @NgModule({
-  declarations: [GameComponent, ControllerComponent, HiscoreComponent, BestPipe],
+  declarations: [GameComponent, ControllerComponent, HiscoreComponent, BestPipe, FilterPipe, MyScoreComponent],
   imports: [
     CommonModule,
     TetrisCoreModule,
     HotkeyModule.forRoot(),
-    HttpClientModule
+    HttpClientModule,
+    FormsModule
   ],
   exports: [GameComponent]
 })
