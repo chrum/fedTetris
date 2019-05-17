@@ -1,4 +1,4 @@
-# FedTetris
+# ngxwTetris
 
 [Angular](https://angular.io/) workshop repository with retro gaming theme that introduces basic angular concepts through building an interface for [ngx-tetris](https://www.npmjs.com/package/ngx-tetris) library.  
 
